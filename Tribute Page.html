@@ -1,0 +1,128 @@
+
+<html>
+  <head>
+    <style>
+     @font-face {
+         font-family:SF_Fedora_Titles; src: url(SF_Fedora_Titles.ttf);
+     }
+     h1{
+         font-family:SF_Fedora_Titles;
+         font-size:35px;
+         text-align:center;
+     }
+     h2{
+         font-family:SF_Fedora_Titles;
+         font-size:30px;
+         text-align:center;
+     }
+     @font-face{
+         font-family:SF_Fedora; src:url(SF_Fedora.ttf);
+     }
+     p{
+         font-family:SF_Fedora;
+         font-size:20px;
+         text-align:center;
+     }
+     @font-face{
+         font-family:SF_Fedora; src:url(SF_Fedora.ttf);
+     }
+a{
+    font-family:SF_Fedora;
+    font-size:25px;
+    color:blue;
+}
+#image {
+    display:block;
+    height: auto;
+    max-width: 100%;
+    margin:auto;
+}
+body {
+  background: 
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+  #fff;
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+div.transbox{
+  margin:30px;
+  background-color:#ffffff;
+  border:1px solid black;
+  opacity:1;
+}
+div.transbox p{
+  margin:1.5%;
+  }
+div.transbox h1{
+  margin:1%;
+  font-weight:bold;
+}
+.container{
+  position:relative;
+  width:500px;
+  height:250px;
+  display:inline-block;
+}
+.learn_more{
+  display:block;
+  width:500px;
+  height:250px;
+}
+.overlay{
+  position:absolute;
+  transition:all .3s ease;
+  background-color:#ffffff;
+  border:1px solid black;
+  opacity:0;
+}
+.container:hover .overlay{
+  opacity:0.8;
+}
+.link{
+font-family:SF_Fedora;
+color:blue;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:25px;
+}
+.overlayleft{
+  height:100%;
+  width:0;
+  top:0;
+  left:0;
+}
+.container:hover .overlayleft{
+  width:100%;
+}
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="transbox">
+      <h1 id="title"> Hirohiko Araki </h1>
+    </div>
+      <div id="img-div">
+        <img src="Hirohiko_Araki_2.jpg" alt="Hirohiko Araki Portrait" id="image">
+        <h2 id="img-caption"><em>Famous writer and artist from Japan.</em></h2>
+      </div>
+      <div id="tribute-info" class="transbox">
+        <p><bold>Hirohiko Araki is a mangaka who is famous for his long-running series "Jojo's Bizarre Adventure," which was first published in 1987 and it continues to produce more chapters to this day. Araki's style is a mix of multitple western elements, such as, rock music, fashion and movies, all of which Araki is a huge fan of. In 2012, Jojo's Bizarre Adventure received an anime adaptation that resulted in the series gaining popularity outside of Japan. Many fans consider Jojo's Bizarre Adventure as one of the most influential mangas of all times, alongside with other classics like Dragon Ball and One Piece. If you want to learn more about Hirohiko Araki, click the arrow below this box.</bold></p>
+      </div>
+      <div class="container">
+<img src="learn_more_2.png" alt="To learn more about Hirohiko Araki press the arrow." class="learn_more">
+     <div class="overlay overlayleft">
+       <div class="link"><a href="https://en.wikipedia.org/wiki/Hirohiko_Araki" target="_blank" id="tribute-link">Click here to go to Hirohiko Araki's wikipedia page.</a></div>
+     </div>
+</div>
+
+     </div>
+  </body>
+</html>
+
+<a href="https://en.wikipedia.org/wiki/Hirohiko_Araki" target="_blank" id="tribute-link"></a>
